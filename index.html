@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MT 6V33 Educational Hub Ltd | Your Gateway to Academic Excellence</title>
+    <meta name="description" content="MT 6V33 Educational Hub Ltd - Expert guidance for university admissions, scholarships, standardized tests, and study abroad programs in Lagos, Nigeria.">
+    <meta name="keywords" content="educational consultancy, university admission, scholarship, JAMB, WAEC, IELTS, study abroad, Lagos, Nigeria">
+    <meta name="author" content="MT 6V33 Educational Hub Ltd">
+    <meta property="og:title" content="MT 6V33 Educational Hub Ltd">
+    <meta property="og:description" content="Your Gateway to Academic Excellence - Admissions, Scholarships & Study Abroad">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://matthew633edu.com.ng">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============================================
+         TOP BAR
+         ============================================ -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-left">
+                <a href="tel:+23407072109592" class="top-bar-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>0707 210 9592</span>
+                </a>
+                <a href="mailto:hello@matthew633edu.com.ng" class="top-bar-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>hello@matthew633edu.com.ng</span>
+                </a>
+                <span class="top-bar-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Opebi, Lagos, Nigeria</span>
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="top-bar-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="top-bar-social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="top-bar-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="top-bar-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/23407072109592" class="top-bar-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">MT 6V33 <span>EDU</span></span>
+                    <span class="logo-tagline">Educational Hub Ltd</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#services"><i class="fas fa-user-graduate"></i> Student Recruitment</a>
+                        <a href="#services"><i class="fas fa-comments"></i> Guidance & Counseling</a>
+                        <a href="#services"><i class="fas fa-file-alt"></i> Application Processing</a>
+                        <a href="#services"><i class="fas fa-compass"></i> Career Advisory</a>
+                        <a href="#services"><i class="fas fa-hand-holding-usd"></i> Scholarships & Aid</a>
+                        <a href="#services"><i class="fas fa-pencil-alt"></i> Test Preparation</a>
+                        <a href="#services"><i class="fas fa-passport"></i> Study Abroad / Visa</a>
+                        <a href="#services"><i class="fas fa-award"></i> Sponsorship Programs</a>
+                    </div>
+                </li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="https://wa.me/23407072109592" class="btn-cta" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Chat on WhatsApp
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="openMobileMenu()" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="mobile-menu-logo">MT 6V33 <span>EDU</span></span>
+            <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="active" onclick="closeMobileMenu()">
+                <i class="fas fa-home"></i> Home
+            </a></li>
+            <li><a href="#about" onclick="closeMobileMenu()">
+                <i class="fas fa-info-circle"></i> About Us
+            </a></li>
+            <li>
+                <a href="#services" onclick="toggleMobileDropdown(event)">
+                    <i class="fas fa-briefcase"></i> Services
+                    <i class="fas fa-chevron-down mobile-dropdown-toggle" id="mobileDropdownToggle"></i>
+                </a>
+                <div class="mobile-dropdown-menu" id="mobileDropdownMenu">
+                    <a href="#services" onclick="closeMobileMenu()"><i class="fas fa-user-graduate"></i> Student Recruitment</a>
+                    <a href="#services" onclick="closeMobileMenu()"><i class="fas fa-comments"></i> Guidance & Counseling</a>
+                    <a href="#services" onclick="closeMobileMenu()"><i class="fas fa-file-alt"></i> Application Processing</a>
+                    <a href="#services" onclick="closeMobileMenu()"><i class="fas fa-compass"></i> Career Advisory</a>
+                    <a href="#services" onclick="closeMobileMenu()"><i class="fas fa-hand-holding-usd"></i> Scholarships & Aid</a>
+                    <a href="#services" onclick="closeMobileMenu()"><i class="fas fa-pencil-alt"></i> Test Preparation</a>
+                    <a href="#services" onclick="closeMobileMenu()"><i class="fas fa-passport"></i> Study Abroad / Visa</a>
+                    <a href="#services" onclick="closeMobileMenu()"><i class="fas fa-award"></i> Sponsorship Programs</a>
+                </div>
+            </li>
+            <li><a href="#why-us" onclick="closeMobileMenu()">
+                <i class="fas fa-star"></i> Why Choose Us
+            </a></li>
+            <li><a href="#contact" onclick="closeMobileMenu()">
+                <i class="fas fa-envelope"></i> Contact
+            </a></li>
+        </ul>
+
+        <div class="mobile-cta">
+            <a href="https://wa.me/23407072109592" class="btn-cta" onclick="closeMobileMenu()" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Chat on WhatsApp
+            </a>
+        </div>
+
+        <div class="mobile-contact-info">
+            <a href="tel:+23407072109592" class="mobile-contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>0707 210 9592</span>
+            </a>
+            <a href="mailto:hello@matthew633edu.com.ng" class="mobile-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>hello@matthew633edu.com.ng</span>
+            </a>
+            <span class="mobile-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>28 Irewole St, Opebi, Lagos</span>
+            </span>
+        </div>
+    </div>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <h1>Your Gateway to <span>Academic Excellence</span></h1>
+                <p>Expert guidance for university admissions, scholarships, standardized tests, and study abroad programs. We turn your educational dreams into reality.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Get Started
+                    </a>
+                    <a href="#services" class="btn btn-outline">
+                        <i class="fas fa-play-circle"></i>
+                        Our Services
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=500&fit=crop" alt="Students celebrating graduation" loading="lazy">
+                <div class="hero-badge">
+                    <div class="hero-badge-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="hero-badge-text">
+                        Trusted Excellence
+                        <span>Since 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         STATS BAR
+         ============================================ -->
+    <div class="stats-bar">
+        <div class="container">
+            <div class="stats-container fade-in">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Students Guided</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Partner Institutions</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Core Services</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Commitment</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=700&fit=crop" alt="Education counseling session" loading="lazy">
+                </div>
+                <div class="about-content fade-in">
+                    <span class="section-label">About Us</span>
+                    <h3>Empowering Students to Reach Their Full Potential</h3>
+                    <p>MT 6V33 Educational Hub Ltd is a premier educational consultancy based in Lagos, Nigeria. We specialize in guiding students through every step of their academic journey — from university admissions and scholarship applications to standardized test preparation and study abroad programs.</p>
+                    <p>Our mission is to bridge the gap between ambition and achievement, ensuring every student gets the opportunity to study at their dream institution, both locally and internationally.</p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="about-feature-text">
+                                <h4>Expert Counselors</h4>
+                                <p>Professional guidance tailored to your goals</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="about-feature-text">
+                                <h4>Global Network</h4>
+                                <p>Partnerships with top institutions worldwide</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <div class="about-feature-text">
+                                <h4>Personalized Care</h4>
+                                <p>One-on-one support throughout your journey</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="about-feature-text">
+                                <h4>Proven Results</h4>
+                                <p>Track record of successful admissions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES SECTION
+         ============================================ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Our Services</span>
+                <h2>Comprehensive Educational Solutions</h2>
+                <p>From admission guidance to visa processing, we provide end-to-end support for your academic success</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Student Recruitment</h3>
+                    <p>Expert recruitment for admission into tertiary institutions both locally in Nigeria and internationally across top global universities.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Guidance & Counseling</h3>
+                    <p>Professional counseling for students seeking admission into universities, polytechnics, and other higher institutions of learning.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Application Processing</h3>
+                    <p>Assistance in preparation and processing of admission applications, including personal statements, recommendation letters, and required documents.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Career & Academic Advisory</h3>
+                    <p>Expert career counseling and academic advisory services to students and parents in selecting appropriate courses and institutions.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Scholarship & Financial Aid</h3>
+                    <p>Connecting students with available scholarship opportunities, grants, and financial aid programs both within and outside Nigeria.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Seminars & Workshops</h3>
+                    <p>Organizing educational seminars, workshops, and training programs on career development, admission requirements, and study strategies.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3>Standardized Test Prep</h3>
+                    <p>Assistance in preparation and registration for JAMB, WAEC, NECO, TOEFL, IELTS, SAT, GRE, GMAT, and other relevant examinations.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Institutional Collaboration</h3>
+                    <p>Collaboration with tertiary institutions, educational bodies, and government agencies in facilitating student admission and academic placement.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>Study Abroad Visa Guide</h3>
+                    <p>Guidance on visa application procedures and related documentation for study abroad programs (excluding tour and travel services).</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Mentorship & Coaching</h3>
+                    <p>Mentorship and academic coaching services to help students improve their academic performance and enhance their chances of admission.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Credential Evaluation</h3>
+                    <p>Assistance in the evaluation and verification of academic credentials for students applying to foreign institutions.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Sponsorship Initiatives</h3>
+                    <p>Partnership with foundations, corporate organizations, and government agencies in creating scholarship programs and sponsorship initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WHY CHOOSE US
+         ============================================ -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Why Choose Us</span>
+                <h2>The MT 6V33 Advantage</h2>
+                <p>We combine expertise, dedication, and a vast network to deliver unmatched educational consulting services</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-box fade-in">
+                    <div class="feature-box-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Goal-Oriented</h3>
+                    <p>Every strategy is tailored to your specific academic and career objectives</p>
+                </div>
+
+                <div class="feature-box fade-in">
+                    <div class="feature-box-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Experienced Team</h3>
+                    <p>Our consultants bring years of experience in educational guidance and admissions</p>
+                </div>
+
+                <div class="feature-box fade-in">
+                    <div class="feature-box-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Wide Network</h3>
+                    <p>Strong connections with universities, colleges, and scholarship bodies globally</p>
+                </div>
+
+                <div class="feature-box fade-in">
+                    <div class="feature-box-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Continuous support and guidance throughout your application journey</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CTA SECTION
+         ============================================ -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="fade-in">Ready to Start Your Academic Journey?</h2>
+            <p class="fade-in">Let us help you unlock your potential and secure your future. Contact us today for a free consultation.</p>
+            <a href="#contact" class="btn btn-primary fade-in">
+                <i class="fas fa-phone-alt"></i>
+                Contact Us Now
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Get In Touch</span>
+                <h2>Contact Us</h2>
+                <p>Visit our office in Lagos or reach out to us through any of the channels below</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>Let's Discuss Your Future</h3>
+                    <p>Whether you're planning to study in Nigeria or abroad, our team is ready to guide you every step of the way. Reach out today!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Office Address</h4>
+                                <p>28, Irewole Street,<br>Behind Chicken Republic,<br>Opebi, Lagos, Nigeria</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Phone & WhatsApp</h4>
+                                <a href="tel:+23407072109592">0707 210 9592</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Email Address</h4>
+                                <a href="mailto:hello@matthew633edu.com.ng">hello@matthew633edu.com.ng</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Website</h4>
+                                <a href="https://matthew633edu.com.ng" target="_blank">matthew633edu.com.ng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form fade-in">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="recruitment">Student Recruitment</option>
+                                <option value="counseling">Guidance & Counseling</option>
+                                <option value="application">Application Processing</option>
+                                <option value="career">Career Advisory</option>
+                                <option value="scholarship">Scholarship & Financial Aid</option>
+                                <option value="test-prep">Standardized Test Preparation</option>
+                                <option value="study-abroad">Study Abroad / Visa Guide</option>
+                                <option value="other">Other Services</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your educational goals..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-container fade-in">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>28, IREWOLE STREET, OPEBI, LAGOS<br>(Behind Chicken Republic)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         NEWSLETTER BAR
+         ============================================ -->
+    <div class="newsletter-bar">
+        <div class="container newsletter-container">
+            <div class="newsletter-text">
+                <h3>Stay Updated with Educational Opportunities</h3>
+                <p>Get the latest on scholarships, admissions, and study tips delivered to your inbox.</p>
+            </div>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">
+                    Subscribe <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-name">MT 6V33 <span>EDU</span></span>
+                            <span class="footer-logo-tagline">Educational Hub Ltd</span>
+                        </div>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Your trusted partner in academic excellence. We guide, support, and empower students to achieve their educational dreams both locally and internationally. Registered in Nigeria.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/23407072109592" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:hello@matthew633edu.com.ng" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                        <li><a href="#why-us"><i class="fas fa-chevron-right"></i> Why Choose Us</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Blog & Resources</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Student Recruitment</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Admissions Guidance</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Scholarship Aid</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Test Preparation</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Study Abroad</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Visa Assistance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="footer-contact-text">
+                                <h5>Visit Our Office</h5>
+                                <p>28, Irewole Street,<br>Behind Chicken Republic,<br>Opebi, Lagos, Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="footer-contact-text">
+                                <h5>Phone & WhatsApp</h5>
+                                <a href="tel:+23407072109592">0707 210 9592</a>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="footer-contact-text">
+                                <h5>Email Us</h5>
+                                <a href="mailto:hello@matthew633edu.com.ng">hello@matthew633edu.com.ng</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-hours">
+                        <h5><i class="far fa-clock"></i> Business Hours</h5>
+                        <p>Monday – Friday: 8:00 AM – 6:00 PM<br>Saturday: 9:00 AM – 4:00 PM</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+        <div class="container footer-bottom-container">
+            <p class="footer-copyright">
+                <strong>MT 6V33 Educational Hub Ltd</strong>. All Rights Reserved. | Registered in Nigeria
+            </p>
+            <ul class="footer-bottom-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
